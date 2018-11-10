@@ -6,6 +6,7 @@ import s from 'styled-components'
 
 import Header from './header'
 import HeroBG from './Hero'
+import TextHero from './Hero/TextHero'
 
 import './layout.css'
 
@@ -14,18 +15,16 @@ const SiteWrapper = s('div')`
 margin: 0 auto;
 maxWidth: 960px;
 `
-const TextHero = s('div')`
-display: flex;
-align-items: center;
-justify-content: center;
-position: fixed;
-top: 0;
-height: 300px;
-width: 100%;
-`
 
-const H3 = s('h3')`
-display: inline
+const Section = s('section')`
+margin: 0 auto;
+height: 100vh;
+width: 100vw;
+position: relative;
+top: 300px;
+background: white;
+border-top: 3px solid #EFC93E;
+box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.3);
 `
 
 const Layout = ({ children }) => (
@@ -51,20 +50,12 @@ const Layout = ({ children }) => (
           <html lang="en" />
           <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"></link>
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
         <HeroBG />
-        
+        <TextHero />
         <SiteWrapper>
-        <TextHero>
-          <>
-            <H3>
-              Turning your
-            </H3>
-            <H3 className="doodleFont"> &nbsp; DOODLES</H3>
-            <H3>, into your website.</H3>
-          </>
-        </TextHero>
-          {children}
+          <Section>
+            {children}
+          </Section>
         </SiteWrapper>
       </>
     )}
