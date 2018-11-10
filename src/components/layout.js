@@ -7,13 +7,13 @@ import s from 'styled-components'
 import Header from './header'
 import HeroBG from './Hero'
 import TextHero from './Hero/TextHero'
+import ProfilePic from './ProfilePic'
 
-import './layout.css'
+// import './layout.css'
 
 
 const SiteWrapper = s('div')`
 margin: 0 auto;
-maxWidth: 960px;
 `
 
 const Section = s('section')`
@@ -22,9 +22,23 @@ height: 100vh;
 width: 100vw;
 position: relative;
 top: 300px;
+display: flex;
+align-items: center;
+flex-direction: column;
 background: white;
 border-top: 3px solid #EFC93E;
 box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.3);
+`
+
+const PicWrapper = s('div')`
+width: 150px;
+height: auto;
+border-radius: 150px;
+margin-top: -75px;
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
 `
 
 const Layout = ({ children }) => (
@@ -48,12 +62,15 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
-          <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"></link>
         </Helmet>
-        <HeroBG />
         <TextHero />
+        <HeroBG />
+        
         <SiteWrapper>
           <Section>
+            <PicWrapper>
+              <ProfilePic/>
+            </PicWrapper>
             {children}
           </Section>
         </SiteWrapper>
