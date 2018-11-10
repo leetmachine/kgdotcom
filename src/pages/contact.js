@@ -26,7 +26,8 @@ const ContactPage = () => (
     <Container>
         <Block>
       <h3>Contact me today to see how I can help.</h3>
-      <form name="contact" method="POST" netlify action="/success">
+      <form name="contact" method="POST" data-netlify="true" action="/success">
+        <input type="hidden" name="form-name" value="contact"/>
         <p>
           <label>
             Your Name: <input type="text" name="name" />
