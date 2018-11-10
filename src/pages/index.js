@@ -9,7 +9,6 @@ const Container = s('div')`
 display: flex;
 flex-direction: column;
 align-items: center;
-margin: 0 auto;
 `
 
 const PicWrapper = s('div')`
@@ -22,7 +21,7 @@ margin-top: -100px;
 const Section = s('section')`
 margin: 0 auto;
 height: 100vh;
-width: 100%;
+width: 100vw;
 background: white;
 position: relative;
 top: 300px;

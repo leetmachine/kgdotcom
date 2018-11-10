@@ -26,7 +26,7 @@ const ProfilePic = (props) => (
         }
       }
     `}
-    render={data => <Img style={{borderRadius: "200px"}}fixed={data.placeholderImage.childImageSharp.fixed} />}
+    render={data => <Img style={{borderRadius: "200px"}} fixed={data.placeholderImage.childImageSharp.fixed}/>}
     />
 )
 
