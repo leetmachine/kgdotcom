@@ -4,8 +4,12 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import s from 'styled-components'
 
+import Particles from 'react-particles-js'
+import particlesConfig from '../config/particlesjs-config.json'
+
 import Header from './header'
-import Particles from './Particles'
+
+
 import './layout.css'
 
 
@@ -13,6 +17,17 @@ const SiteWrapper = s('div')`
 margin: 0 auto;
 maxWidth: 960px;
 `
+
+const ParticlesFixed = s(Particles)`
+position: fixed;
+top: 0;
+`
+
+const particleParams = {
+  particles: {
+    color: '#000'
+  }
+}
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -38,7 +53,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <SiteWrapper>
-        {/* <Particles/> */}
+        <ParticlesFixed width="100vw" height="350px" params={particlesConfig}/>
           {children}
         </SiteWrapper>
       </>

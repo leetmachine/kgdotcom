@@ -22,9 +22,9 @@ const Section = s('section')`
 margin: 0 auto;
 height: 100vh;
 width: 100vw;
-background: white;
 position: relative;
 top: 300px;
+background: white;
 box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
 `
 
