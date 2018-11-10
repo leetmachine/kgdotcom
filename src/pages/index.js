@@ -1,18 +1,42 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import s from 'styled-components'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
+import ProfilePic from '../components/ProfilePic'
+
+const Container = s('div')`
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0 auto;
+`
+
+const PicWrapper = s('div')`
+width: 250px;
+height: auto;
+border-radius: 200px;
+margin-top: -125px;
+`
+
+const Section = s('section')`
+margin: 0 auto;
+height: 100vh;
+width: 100%;
+background: white;
+position: relative;
+top: 300px;
+`
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Section>
+      <Container id="container">
+        <PicWrapper>
+          <ProfilePic />
+        </PicWrapper>
+      </Container>
+    </Section>
   </Layout>
 )
 
