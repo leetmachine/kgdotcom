@@ -20,7 +20,7 @@ const ProfilePic = (props) => (
         placeholderImage: file(relativePath: { eq: "keegan-icon.jpeg" }) {
           childImageSharp {
             fixed(width: 200) {
-              ...GatsbyImageSharpFixed_withWebp
+              ...GatsbyImageSharpFixed_withWebp_noBase64
             }
           }
         }
