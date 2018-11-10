@@ -13,10 +13,10 @@ margin: 0 auto;
 `
 
 const PicWrapper = s('div')`
-width: 250px;
+width: 200px;
 height: auto;
 border-radius: 200px;
-margin-top: -125px;
+margin-top: -100px;
 `
 
 const Section = s('section')`

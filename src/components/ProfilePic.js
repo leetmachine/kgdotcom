@@ -19,14 +19,14 @@ const ProfilePic = (props) => (
       query {
         placeholderImage: file(relativePath: { eq: "keegan-icon.jpeg" }) {
           childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
+            fixed(width: 200) {
+              ...GatsbyImageSharpFixed_withWebp_tracedSVG
             }
           }
         }
       }
     `}
-    render={data => <Img style={{borderRadius: "200px"}}fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img style={{borderRadius: "200px"}}fixed={data.placeholderImage.childImageSharp.fixed} />}
     />
 )
 
