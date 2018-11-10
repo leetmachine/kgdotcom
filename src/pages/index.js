@@ -33,7 +33,7 @@ const IndexPage = () => (
     <Section>
       <Container id="container">
         <PicWrapper>
-          <ProfilePic />
+          <ProfilePic/>
         </PicWrapper>
       </Container>
     </Section>
