@@ -4,11 +4,8 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import s from 'styled-components'
 
-import Particles from 'react-particles-js'
-import particlesConfig from '../config/particlesjs-config.json'
-
 import Header from './header'
-
+import HeroBG from './Hero'
 
 import './layout.css'
 
@@ -17,17 +14,19 @@ const SiteWrapper = s('div')`
 margin: 0 auto;
 maxWidth: 960px;
 `
-
-const ParticlesFixed = s(Particles)`
+const TextHero = s('div')`
+display: flex;
+align-items: center;
+justify-content: center;
 position: fixed;
 top: 0;
+height: 300px;
+width: 100%;
 `
 
-const particleParams = {
-  particles: {
-    color: '#000'
-  }
-}
+const H3 = s('h3')`
+display: inline
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -50,10 +49,21 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+          <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"></link>
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
+        <HeroBG />
+        
         <SiteWrapper>
-        <ParticlesFixed width="100vw" height="350px" params={particlesConfig}/>
+        <TextHero>
+          <>
+            <H3>
+              Turning your
+            </H3>
+            <H3 className="doodleFont"> &nbsp; DOODLES</H3>
+            <H3>, into your website.</H3>
+          </>
+        </TextHero>
           {children}
         </SiteWrapper>
       </>

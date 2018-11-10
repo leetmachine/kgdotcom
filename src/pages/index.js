@@ -16,6 +16,7 @@ width: 200px;
 height: auto;
 border-radius: 200px;
 margin-top: -100px;
+margin-bottom: 20px;
 `
 
 const Section = s('section')`
@@ -31,10 +32,14 @@ box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
 const IndexPage = () => (
   <Layout>
     <Section>
-      <Container id="container">
+      <Container>
         <PicWrapper>
           <ProfilePic/>
         </PicWrapper>
+
+        <span>lorem</span>
+        <h4>contact me today to get your ideas off the napkin and onto the web.</h4>
+
       </Container>
     </Section>
   </Layout>
