@@ -6,7 +6,7 @@ import bgImg from '../../images/creampaper.png'
 const FlexWrapper = styled('div')`
   position: fixed;
   top: 0;
-  height: 300px;
+  height: 330px;
   width: 100%;
   display: flex;
   align-items: center;

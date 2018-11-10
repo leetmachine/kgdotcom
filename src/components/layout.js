@@ -21,7 +21,7 @@ margin: 0 auto;
 height: 100vh;
 width: 100vw;
 position: relative;
-top: 300px;
+top: 325px;
 display: flex;
 align-items: center;
 flex-direction: column;
@@ -63,9 +63,9 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
+        <Header />
         <TextHero />
         <HeroBG />
-        
         <SiteWrapper>
           <Section>
             <PicWrapper>
