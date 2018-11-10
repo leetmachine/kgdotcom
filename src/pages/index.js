@@ -25,7 +25,7 @@ width: 100vw;
 background: white;
 position: relative;
 top: 300px;
-box-shadow: 0px;
+box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
 `
 
 const IndexPage = () => (
