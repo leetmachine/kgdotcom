@@ -1,4 +1,10 @@
 /* border radius wasn't working on safari so had to select item manually */
+
+/* the main image */
 .borderRadius > picture > img {
+    border-radius: 150px;
+}
+/* the traced svg */
+.borderRadius > img {
     border-radius: 150px;
 }
