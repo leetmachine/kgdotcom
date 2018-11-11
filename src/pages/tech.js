@@ -6,6 +6,13 @@ import { GoogleFont } from 'react-typography'
 import Layout from '../components/layout'
 import ProfilePic from '../components/ProfilePic'
 
+import ReactLogo from '../images/reactLogo.svg'
+import GQLLogo from '../images/GraphQL_Logo.png'
+import AWSLogo from '../images/awslogo.png'
+import GatsbyLogo from '../images/gatsbylogo.png'
+import NodeLogo from '../images/nodejslogo.png'
+import MysqlLogo from '../images/mysqllogo.png'
+
 const Container = styled('div')`
 display: flex;
 flex-direction: column;
@@ -23,20 +30,69 @@ padding: 20px;
 text-align: justify;
 `
 
-const IndexPage = () => (
+const Heading = styled('h1')`
+  text-align: center;
+  margin: 10px;
+  marginBottom: .8125rem;
+  padding: 0;
+`
+
+const ItemContainer = styled('div')`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 20px;
+
+`
+
+const List = styled('div')`
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 300px;
+    max-width: 450px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 auto;
+    margin-top: 30px;
+`
+
+const TechPage = () => (
   <Layout>
       <Container>
         <Block>
-          <p>We've all been there, the perfect idea pops into our head and we reach for the closest parchment-like item we can find- a napkin, a tablecloth, your friends arm. We feaverishly jot it down in hopes of solidifying it to the universe as our own, awesome idea. Sometimes they really are that great, sometimes they're not.</p></Block>
-          <h1 style={{textAlign: "center", margin: "10px", marginBottom: ".8125rem", padding: "0"}}>I'm here to help with the great ones.</h1>
-        <Block>
-          <p>I'm Keegan and I like to build web applications. I make things as easy as possible for my clients by offering complete solutions that take your project from start to finish. Ill do what I do best so you can focus on what matters, your business.</p>
-        </Block>
-        <Block>
-          <p>I believe in specialization and software development is mine. I work with a team as needed to get the job done. I've created a network of Writers, Designers, Photographers, Videographers, Marketers, you name it! Whatever we need to get your project to the highest level, we'll have the specialist we need and trust.</p>
+            <Heading>Latest and Greatest</Heading>
+            <p style={{textAlign: "center"}}>I use the latest and greatest tech from teams like Facebook and Amazon to build high quality websites for the future. Things like:</p>
+            <List>
+                    <ItemContainer>
+                        <img src={ReactLogo} width="100px" style={{margin: 0, marginBottom: '10px'}}/>
+                        <h3 style={{margin: 0}}>React</h3>
+                    </ItemContainer>
+                    <ItemContainer>
+                        <img src={GQLLogo} width="100px" style={{margin: 0, marginBottom: '10px'}}/>
+                        <h3 style={{margin: 0}}>GraphQL</h3>
+                    </ItemContainer>
+                    <ItemContainer>
+                        <img src={AWSLogo} width="100px" style={{margin: 0, marginBottom: '10px'}}/>
+                        <h3 style={{margin: 0}}>AWS</h3>
+                    </ItemContainer>
+                    <ItemContainer>
+                        <img src={GatsbyLogo} width="100px" style={{margin: 0, marginBottom: '10px'}}/>
+                        <h3 style={{margin: 0}}>Gatsby</h3>
+                    </ItemContainer>
+                    <ItemContainer>
+                        <img src={NodeLogo} width="100px" style={{margin: 0, marginBottom: '10px'}}/>
+                        <h3 style={{margin: 0}}>NodeJS</h3>
+                    </ItemContainer>
+                    <ItemContainer>
+                        <img src={MysqlLogo} width="100px" style={{margin: 0, marginBottom: '10px'}}/>
+                        <h3 style={{margin: 0}}>MySql</h3>
+                    </ItemContainer>
+            </List>
         </Block>
      </Container>
   </Layout>
 )
 
-export default IndexPage
+export default TechPage

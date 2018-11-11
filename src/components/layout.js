@@ -27,7 +27,6 @@ align-items: center;
 flex-direction: column;
 background: white;
 border-top: 3px solid #EFC93E;
-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.3);
 `
 
 const PicWrapper = s('div')`
