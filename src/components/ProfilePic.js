@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+import './pic.css'
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -20,13 +21,13 @@ const ProfilePic = (props) => (
         placeholderImage: file(relativePath: { eq: "keegan-icon2.jpeg" }) {
           childImageSharp {
             fixed(width: 150) {
-              ...GatsbyImageSharpFixed_withWebp_tracedSVG
+              ...GatsbyImageSharpFixed_tracedSVG
             }
           }
         }
       }
     `}
-    render={data => <Img style={{borderRadius: "150px", border: "3px solid #EFC93E"}} fixed={data.placeholderImage.childImageSharp.fixed}/>}
+    render={data => <Img className="borderRadius" style={{borderRadius: "150px", border: "3px solid #EFC93E"}} fixed={data.placeholderImage.childImageSharp.fixed}/>}
     />
 )
 

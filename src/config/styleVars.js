@@ -15,3 +15,7 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
     return acc
 }, {})
 
+export const Hidden = css`
+    ${media.tablet`display: hidden`}
+`
+

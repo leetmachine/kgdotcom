@@ -29,7 +29,7 @@ module.exports = {
         background_color: '#DDAF36',
         theme_color: '#DDAF36',
         display: 'minimal-ui',
-        icon: 'src/images/keegan-icon.jpeg', // This path is relative to the root of the site.
+        icon: 'src/images/keegan-icon2.jpeg', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

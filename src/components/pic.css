@@ -1,0 +1,4 @@
+/* border radius wasn't working on safari so had to select item manually */
+.borderRadius > picture > img {
+    border-radius: 150px;
+}

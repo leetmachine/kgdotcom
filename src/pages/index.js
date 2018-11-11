@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import { Hidden } from '../config/styleVars'
 
 import Layout from '../components/layout'
 
@@ -59,7 +60,7 @@ const IndexPage = () => (
       </Block>
       <Heading>I'm here to help with the great ones.</Heading>
       <List>
-        <img src={MarketingDoodle} width="100px" />
+        <img src={MarketingDoodle} width="100px" style={{Hidden}} />
         <img src={RocketDoodle} width="100px" />
         <img src={GearsDoodle} width="100px" />
       </List>
