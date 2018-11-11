@@ -59,7 +59,7 @@ const IndexPage = () => (
           as possible for my clients by offering complete solutions that take
           your project from concept to deployment. From marketing websites, to
           fullblown software solutions, I'm your guy! I use the latest
-          technology from teams like Facebook and Amazon to build blazing-fast, beautiful websites. 
+          technology from teams like Facebook and Amazon to build blazing-fast, beautiful websites. I take care of everyting in between allowing you to focus on what matters, your business.
         </p>
         {/* <ListContainer>
           <List>
