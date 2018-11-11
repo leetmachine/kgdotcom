@@ -71,6 +71,7 @@ const Layout = ({ children }) => (
               <ProfilePic/>
             </PicWrapper>
             {children}
+            
           </Section>
         </SiteWrapper>
       </>
