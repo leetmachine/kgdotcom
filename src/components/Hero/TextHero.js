@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { media } from '../../config/styleVars'
 
 import bgImg from '../../images/creampaper.png'
 
@@ -20,17 +21,23 @@ const Flex = styled('div')`
   display: Flex;
   align-items: center;
   flex-direction: column;
+
+  ${media.tablet`flex-direction: row;`}
 `
 
 const MainText = styled('h3')`
   display: inline;
   margin: 0;
   font-size: 1.8rem;
+
+  ${media.tablet`font-size: 2.5rem`}
 `
 
 const Doodles = styled(MainText)`
 font-family: "Amatic SC", sans-serif;
 font-size: 2.5rem;
+
+${media.tablet`font-size: 3.0rem`}
 `
 
 const TextHero = () => {

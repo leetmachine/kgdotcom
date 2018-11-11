@@ -21,7 +21,7 @@ const Container = styled('div')`
 
 const Block = styled('div')`
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 700px;
   padding: 20px;
   text-align: justify;
 `
@@ -71,18 +71,9 @@ const IndexPage = () => (
           your project from concept to deployment. From marketing websites, to
           fullblown software solutions, I'm your guy! I use the latest
           technology from teams like Facebook and Amazon to build blazing-fast,
-          beautiful websites. I take care of everyting in between allowing you
+          beautiful websites and take care of everyting in between allowing you
           to focus on what matters, your business.
         </p>
-        {/* <ListContainer>
-          <List>
-            <li>Responsive and blazing fast marketing websites</li>
-            <li>Interactive client portals</li>
-            <li>Data Management and Visualization tools</li>
-            <li>Easily maintainable portfolio websites</li>
-            <li>Ecommerce stores</li>
-          </List>
-        </ListContainer> */}
         <ul />
       </Block>
       <Heading>Specialists do it right.</Heading>

@@ -17,7 +17,7 @@ const ProfilePic = (props) => (
     <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "keegan-icon.jpeg" }) {
+        placeholderImage: file(relativePath: { eq: "keegan-icon2.jpeg" }) {
           childImageSharp {
             fixed(width: 150) {
               ...GatsbyImageSharpFixed_withWebp_tracedSVG

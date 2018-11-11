@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import { media } from '../config/styleVars'
 
 const Container = styled('div')`
 background-color: #efca3f;
@@ -12,6 +13,7 @@ top: 0;
 z-index: 100;
 padding: 10px;
 box-shadow: 0px 2px 2px 0px rgba(0,0,0,.3);
+
 `
 
 const FlexBox = styled('div')`
@@ -20,6 +22,8 @@ align-items: space-between;
 justify-content: space-between;
 max-width: 80%;
 margin: 0 auto;
+
+${media.tablet`max-width: 700px;`}
 `
 
 const NavLink = styled(Link)`
