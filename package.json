@@ -5,6 +5,7 @@
   "author": "Keegan Gladstone, gatsby-starter: Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.8.0",
+    "bootstrap": "^4.1.3",
     "gatsby": "^2.0.19",
     "gatsby-image": "^2.0.15",
     "gatsby-plugin-manifest": "^2.0.5",
@@ -21,6 +22,7 @@
     "react-helmet": "^5.2.0",
     "react-particles-js": "^2.3.0",
     "react-typography": "^0.16.13",
+    "reactstrap": "^6.5.0",
     "styled-components": "^4.0.3",
     "typography": "^0.16.17",
     "typography-theme-github": "^0.15.10"
