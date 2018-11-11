@@ -72,11 +72,10 @@ const IndexPage = () => (
         <p>
           I'm Keegan and I like to build web applications. I make things as easy
           as possible for my clients by offering complete solutions that take
-          your project from concept to deployment. From marketing websites, to
-          fullblown software solutions, I'm your guy! I use the latest
+          your project from concept to deployment. From marketing websites to
+          fullblown software solutions, I'll help you through the process of idea generation, solution architecture, and implementation. I use the latest
           technology from teams like Facebook and Amazon to build blazing-fast,
-          beautiful websites and take care of everyting in between allowing you
-          to focus on what matters, your business.
+          beautiful websites to maximize your investment and truly create value. 
         </p>
         <ul />
       </Block>
