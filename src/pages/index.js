@@ -3,6 +3,9 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Hidden } from '../config/styleVars'
 
+import './css/index.css'
+
+
 import Layout from '../components/layout'
 
 import MarketingDoodle from '../images/marketingDoodles.png'
@@ -62,7 +65,7 @@ const IndexPage = () => (
       <List>
         <img src={MarketingDoodle} width="100px" style={{Hidden}} />
         <img src={RocketDoodle} width="100px" />
-        <img src={GearsDoodle} width="100px" />
+        <img className="hiddenOnSmall" src={GearsDoodle} width="100px" />
       </List>
 
       <Block>

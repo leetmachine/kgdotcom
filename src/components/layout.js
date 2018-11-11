@@ -10,6 +10,7 @@ import TextHero from './Hero/TextHero'
 import ProfilePic from './ProfilePic'
 
 // import './layout.css'
+import './general.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 

@@ -14,20 +14,20 @@ import NodeLogo from '../images/nodejslogo.png'
 import MysqlLogo from '../images/mysqllogo.png'
 
 const Container = styled('div')`
-display: flex;
-flex-direction: column;
-align-items: center;
-max-width: 960px;
-padding-left: 20px;
-padding-right: 20px;
-margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 `
 
 const Block = styled('div')`
-margin: 0 auto;
-max-width: 600px;
-padding: 20px;
-text-align: justify;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 20px;
+  text-align: justify;
 `
 
 const Heading = styled('h1')`

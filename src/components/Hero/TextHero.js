@@ -2,7 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { media } from '../../config/styleVars'
 
-import bgImg from '../../images/creampaper.png'
+// import bgImg from '../../images/creampaper.png'
+// background-image: url(${bgImg});
+// background-attachment: fixed;
 
 const FlexWrapper = styled('div')`
   position: fixed;
@@ -13,8 +15,8 @@ const FlexWrapper = styled('div')`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(${bgImg});
-  background-attachment: fixed;
+
+  
 `
 
 const Flex = styled('div')`
