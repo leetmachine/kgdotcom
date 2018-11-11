@@ -4,6 +4,11 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 
+import MarketingDoodle from '../images/marketingDoodles.png'
+import RocketDoodle from '../images/rocketshipDoodle.png'
+import GearsDoodle from '../images/gearsDoodle.png'
+
+
 const Container = styled('div')`
   display: flex;
   flex-direction: column;
@@ -24,18 +29,20 @@ const Block = styled('div')`
 const Heading = styled('h1')`
   text-align: center;
   margin: 10px;
-  marginBottom: .8125rem;
+  margin-bottom: 0.8125rem;
   padding: 0;
 `
 
 const ListContainer = styled('div')`
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 `
 
-const List = styled('ul')`
-  list-style: none;
-  margin: 0;
+const List = styled('div')`
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width:80%;
 `
 
 const IndexPage = () => (
@@ -50,16 +57,22 @@ const IndexPage = () => (
           they really are that great, sometimes they're not.
         </p>
       </Block>
-      <Heading>
-        I'm here to help with the great ones.
-      </Heading>
+      <Heading>I'm here to help with the great ones.</Heading>
+      <List>
+        <img src={MarketingDoodle} width="100px" />
+        <img src={RocketDoodle} width="100px" />
+        <img src={GearsDoodle} width="100px" />
+      </List>
+
       <Block>
         <p>
           I'm Keegan and I like to build web applications. I make things as easy
           as possible for my clients by offering complete solutions that take
           your project from concept to deployment. From marketing websites, to
           fullblown software solutions, I'm your guy! I use the latest
-          technology from teams like Facebook and Amazon to build blazing-fast, beautiful websites. I take care of everyting in between allowing you to focus on what matters, your business.
+          technology from teams like Facebook and Amazon to build blazing-fast,
+          beautiful websites. I take care of everyting in between allowing you
+          to focus on what matters, your business.
         </p>
         {/* <ListContainer>
           <List>

@@ -18,7 +18,6 @@ margin: 0 auto;
 
 const Section = s('section')`
 margin: 0 auto;
-height: 100vh;
 width: 100vw;
 position: relative;
 top: 325px;
@@ -71,7 +70,6 @@ const Layout = ({ children }) => (
               <ProfilePic/>
             </PicWrapper>
             {children}
-            
           </Section>
         </SiteWrapper>
       </>
